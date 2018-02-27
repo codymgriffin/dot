@@ -21,6 +21,7 @@ filetype plugin indent on    " required
 set number
 set t_Co=256
 colorscheme neverland-darker
+let g:airline_powerline_fonts = 1
 
 "mappings
 map <C-n> :NERDTree<CR>
