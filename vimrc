@@ -12,7 +12,8 @@ Plugin 'bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
-Plugin 'vim-syntastic/syntastic'
+Plugin 'junegunn/fzf.vim'
+"Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -25,11 +26,12 @@ let g:airline_powerline_fonts = 1
 
 "mappings
 map <C-n> :NERDTree<CR>
+map <C-p> :FZF<CR>
 
 "options
-set tabstop=2
+set tabstop=4
 set expandtab
-set shiftwidth=2
+set shiftwidth=4
 set updatetime=100
 
 if exists('&signcolumn')  " Vim 7.4.2201
