@@ -7,9 +7,13 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'trapd00r/neverland-vim-theme'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-scripts/CycleColor'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'fatih/vim-go'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'junegunn/fzf.vim'
@@ -21,12 +25,14 @@ filetype plugin indent on    " required
 "appearance
 set number
 set t_Co=256
-colorscheme neverland-darker
+colorscheme neverland2
+let g:airline_theme = 'tomorrow'
 let g:airline_powerline_fonts = 1
 
 "mappings
 map <C-n> :NERDTree<CR>
 map <C-p> :FZF<CR>
+"map <C-c> :CycleColorNext<CR>
 
 "options
 set tabstop=4

@@ -1,0 +1,3 @@
+[submodule "code/i3"]
+	path = code/i3
+	url = git@github.com:Airblader/i3.git

@@ -10,3 +10,6 @@ ln -fs ${BASEDIR}/tmux.conf ~/.tmux.conf
 
 # git
 ln -fs ${BASEDIR}/gitconfig ~/.gitconfig
+
+# git
+ln -fs ${BASEDIR}/i3_config ~/.i3/config
