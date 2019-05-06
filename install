@@ -11,7 +11,10 @@ ln -fs ${BASEDIR}/tmux.conf ~/.tmux.conf
 # git
 ln -fs ${BASEDIR}/gitconfig ~/.gitconfig
 
-# git
+# i3
 ln -fs ${BASEDIR}/i3_config ~/.i3/config
+
+# polybar
+ln -fs ${BASEDIR}/polybar ~/.config/polybar/config
 
 vim +PluginInstall qall

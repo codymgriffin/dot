@@ -17,6 +17,7 @@ for_window [class="^.*"] border pixel 0
 
 gaps inner 15
 gaps outer 10
+focus_follows_mouse no
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -34,6 +35,9 @@ set $up k
 set $down j
 set $left h
 set $right l
+
+# lock screen
+bindsym Mod1+p exec /usr/local/bin/lock
 
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
@@ -202,10 +206,12 @@ bindsym Mod1+r mode "resize"
 
 #exec --no-startup-id compton --opacity-rule '100:window_type = "dock" && class_g = "i3bar"' --config ~/.config/compton.conf -b
 exec --no-startup-id feh --bg-scale ~/Pictures/aenami.jpg
-exec --no-startup-id syndaemon -i 0.5 -t -K -R -d
+exec --no-startup-id syndaemon -i 1.0 -t -K -R -d
 exec --no-startup-id polybar example
 exec --no-startup-id alsactl restore
 exec --no-startup-id synclient ClickPad=1
 exec --no-startup-id synclient PalmDetect=1
 exec --no-startup-id synclient PalmMinWidth=8
 exec --no-startup-id synclient PalmMinZ=100
+exec --no-startup-id xrandr --output eDP-1 --below DP-1-1
+exec xautolock -time 15 -locker /usr/local/bin/lock &
