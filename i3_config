@@ -213,5 +213,5 @@ exec --no-startup-id synclient ClickPad=1
 exec --no-startup-id synclient PalmDetect=1
 exec --no-startup-id synclient PalmMinWidth=8
 exec --no-startup-id synclient PalmMinZ=100
-exec --no-startup-id xrandr --output eDP-1 --below DP-1-1
+exec --no-startup-id xrandr --output eDP-1 --below DP-1-2
 exec xautolock -time 15 -locker /usr/local/bin/lock &
